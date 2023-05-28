@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+.logotype{
+    color: rgb(0, 0, 0);
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.logotype span {
+    display: inline-block;
+}
+
+.logotype__text1 {
+    text-transform:uppercase;
+    color: rgb(0, 162, 244);
+}
+
+.logotype__text3{
+    color: orange;
+}
