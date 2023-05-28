@@ -6,9 +6,9 @@ import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import SignIn from './pages/SignIn.jsx'
 
-import Logotype from './components/logotype.jsx';
+import Logotype from './components/Logotype.jsx';
 import SearchBar from './components/SearchBar.jsx';
-
+import Basket from './components/Basket.jsx';
 import './App.css'
 import './index.css'
 
@@ -24,6 +24,7 @@ function App() {
           <Link to="login">Login</Link>
           <Link to="about">About</Link>
         </nav>
+        <Basket />
       </header>
       <Routes>
         <Route path='/' element={<Home />}/>
