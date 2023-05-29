@@ -3,7 +3,10 @@ import React from 'react'
 function Searchbar() {
   return (
     <>
-    <input></input>
+    <form action="">
+      <input value={'your product'}></input>
+      <input type="submit" value="Search" />
+    </form>
     </>
   )
 }
