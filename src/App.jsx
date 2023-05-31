@@ -6,7 +6,7 @@ import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import SignIn from './pages/SignIn.jsx'
 
-import Logotype from './components/Logotype.jsx';
+import Logotype from './components/logotype.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import Basket from './components/Basket.jsx';
 import './App.css'
