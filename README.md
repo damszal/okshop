@@ -1,4 +1,4 @@
 # okshop
 OK!shop for dagon project
 
-host on https://transcendent-sable-42a93b.netlify.app
+host on https://stellar-starlight-074cd2.netlify.app/
