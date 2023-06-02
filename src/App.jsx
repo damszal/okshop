@@ -9,8 +9,10 @@ import SignIn from './pages/SignIn.jsx'
 import Logotype from './components/logotype.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import Basket from './components/Basket.jsx';
+
 import './App.css'
 import './index.css'
+import './css/mediaQuery/resolution.css'
 
 function App() {
 
