@@ -1,0 +1,29 @@
+.search-bar {
+    align-self: start;
+    margin-top: 2.8rem;
+}
+
+.search-bar-input,.search-bar-btn{
+    border: 1px solid rgb(0, 162, 244);;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    font-family: inherit;
+}
+
+.search-bar-input{
+    border-radius: 10px 0 0 10px;
+}
+
+.search-bar-input:focus{
+    outline-style: none;
+    box-shadow: none;
+    border-color: rgb(0, 162, 244);
+    opacity: 0.6;
+}
+
+
+.search-bar-btn{
+    border-radius:  0 10px 10px 0;    
+    background-color: rgb(0, 162, 244);
+    cursor: pointer;
+}
