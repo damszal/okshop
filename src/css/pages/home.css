@@ -182,32 +182,75 @@
 .home-sub-con-04{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .c-01-disc{
     grid-column: 1/2;
     background-color: rgb(208, 208, 208);
     height: 200px;
+    overflow: hidden;
 }
+
+.c-01-disc img {
+    display: block;
+    max-width: 140%;
+    max-height: 140%;
+    margin: 0 auto;
+  
+    
+}
+
 
 .c-02-disc{
     grid-column: 2/3;
     background-color: rgb(208, 208, 208);
     height: 200px;
+    overflow: hidden;
+}
+
+.c-02-disc img {
+    display: block;
+    max-width: 140%;
+    max-height: 140%;
+    margin: 0 auto;
+  
+    
 }
 
 .c-03-disc{
     grid-column: 3/4;
     background-color: rgb(208, 208, 208);
     height: 200px;
+    overflow: hidden;
+}
+
+.c-03-disc img {
+    display: block;
+    max-width: 140%;
+    max-height: 140%;
+    margin: 0 auto;
+  
+    
 }
 
 .c-04-disc{
     grid-column: 4/5;
     background-color: rgb(208, 208, 208);
     height: 200px;
+    overflow: hidden;
 }
 
+.c-04-disc img {
+    display: block;
+    max-width: 140%;
+    max-height: 140%;
+    margin: 0 auto;
+  
+    
+}
 .footer{
     grid-row: 5/6;
     grid-column: 1/13;
