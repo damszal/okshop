@@ -106,10 +106,9 @@
 .home-sub-con-03{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    justify-content: stretch;
-    align-items: stretch;
-    height: max-content;
-    margin-top: 3rem;
+    grid-template-rows: min-content;
+    place-items: center;
+    margin-top: 4rem;
 }
 
 .c-01-adv {
@@ -118,19 +117,44 @@
     flex-direction: column;
 }
 
+.c-01-adv h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.c-01-adv p{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
 .c-01-adv img{
     align-self: center;
+    margin-bottom: 1.5rem;
 }
 
 .c-02-adv {
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
+}
 
+.c-02-adv h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.c-02-adv p{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 .c-02-adv img{
     align-self: center;
+    margin-bottom: 1.5rem;
 }
 
 .c-03-adv {
@@ -139,10 +163,22 @@
     flex-direction: column;
 }
 
-.c-03-adv img{
-    align-self: center;
+.c-03-adv h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
+.c-03-adv p{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.c-03-adv img{
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
 .home-sub-con-04{
     display: grid;
     grid-template-columns: repeat(4,1fr);
