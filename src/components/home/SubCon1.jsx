@@ -7,7 +7,20 @@ function SubCon1() {
         <div className='main-slider '>
           <img src={imgUrl} alt="" />
         </div>
-        <div className='main-banner'></div>
+        <div className='main-banner'>
+          <div className="category01">
+            <h2>category</h2>
+            <p>info#</p>
+          </div>
+          <div className="category02">
+            <h2>category</h2>
+            <p>info#</p>
+          </div>
+          <div className="category03">
+            <h2>category</h2>
+            <p>info#</p>
+          </div>
+        </div>
   </section>
   )
 }

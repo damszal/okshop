@@ -5,7 +5,7 @@
 
 .home-sub-con-01{
     display: grid;
-    grid-template-columns: minmax(520px,700px) minmax(700px, 1fr);
+    grid-template-columns: minmax(520px,700px) minmax(630px, 1fr);
     grid-template-rows: 360px;
 }
 .main-slider{
@@ -25,7 +25,41 @@
 
 .main-banner {
     grid-column: 2/3;
-    background-color: rgb(158, 158, 158);  
+    background-color: rgb(158, 158, 158); 
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.category01{
+    background-color: rgb(153, 229, 238);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+.category02{
+    background-color: rgb(100, 233, 166);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+.category03{
+    background-color: rgb(233, 156, 114);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-transform: uppercase;
 }
 
 .home-sub-con-02{
