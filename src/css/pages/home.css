@@ -5,7 +5,7 @@
 
 .home-sub-con-01{
     display: grid;
-    grid-template-columns: minmax(520px,700px) minmax(600px, 1fr);
+    grid-template-columns: minmax(520px,700px) minmax(700px, 1fr);
     grid-template-rows: 360px;
 }
 .main-slider{
