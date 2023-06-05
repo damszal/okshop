@@ -17,6 +17,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import categories from './data/categories.js';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +27,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home /> ,
+        element: <Home cat = {categories}/> ,
       },
       {
         path: '/signin',
