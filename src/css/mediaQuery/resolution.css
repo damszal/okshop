@@ -1,18 +1,49 @@
 @media screen and (max-width:1280px ) {
     body{
-        background-color: red;
+        background-color: rgb(249, 246, 246);
     }
 }
 
 @media screen and (max-width:1024px ) {
     body{
-        background-color: red;
+        background-color: rgb(244, 243, 243);
+    }
+
+    header {
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+    header nav {
+        order: 0;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .search-bar{
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .search-bar-input{
+        flex-grow: 1;
     }
 }
 
 @media screen and (max-width:768px ) {
     body{
         background-color: red;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-bar{
+        width: 80%;
+    }
+
+    .basekt-icon{
+        display: none;
     }
 }
 
