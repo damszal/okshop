@@ -10,7 +10,7 @@
 }
 .main-slider{
     grid-column: 1/2;
-    height: 320px;  
+    height: min-content;  
     place-self: center;
     border: 3px solid rgb(255, 165, 0);
     border-radius: 20px;
