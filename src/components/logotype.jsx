@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../css/components/logotype.css'
+import '../css/components/logotype.scss'
 
 function Logotype() {
   return (
