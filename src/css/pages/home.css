@@ -28,7 +28,26 @@
     background-color: rgb(158, 158, 158); 
     
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+    font-family: 'Carter One', cursive;    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    /* transform: skewY(-4deg); */
+    /* transform: translate(20%, -10%); */
+    
+    max-width: 700px;
+}
+
+.main-banner h2 {
+    color: #323232;
+}
+
+.category01 ul li,.category02 ul li,.category03 ul li{
+    font-size: 1rem;
+    transform: skewY(-1deg);
+    text-shadow: 0 0 2px #000
+    
 }
 
 .category01{
