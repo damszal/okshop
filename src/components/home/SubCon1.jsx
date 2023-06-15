@@ -21,10 +21,10 @@ function SubCon1({cat}) {
           src={imgUrlA} 
           />
         </picture>
-        <Accordion className='accordion'>
+        <Accordion className='accordion' transition transitionTimeout={250}>
             {cat.map(e=>{
               return (
-                <AccordionItem header={e.name}>
+                <AccordionItem header={e.name} className={e.name}>
                   <ul>
                     {e.subcat.map(se=>{
                       return (
