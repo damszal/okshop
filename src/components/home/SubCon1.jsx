@@ -5,6 +5,10 @@ import imgUrlC from '../../assets/items/item1-C.png'
 import imgUrlD from '../../assets/items/item1-D.png'
 import imgUrlE from '../../assets/items/item1-E.png'
 
+import { Accordion, AccordionItem } from '@szhsin/react-accordion';
+import '../../css/components/accordion.scss'
+
+
 function SubCon1({cat}) {
   return (
     <section className='home-sub-con-01'>
@@ -17,7 +21,23 @@ function SubCon1({cat}) {
           src={imgUrlA} 
           />
         </picture>
-        <div className='main-banner'>
+        <Accordion className='accordion'>
+            {cat.map(e=>{
+              return (
+                <AccordionItem header={e.name}>
+                  <ul>
+                    {e.subcat.map(se=>{
+                      return (
+                        <li>{se.name}</li>
+                      )
+                    })}
+                  </ul>
+                </AccordionItem>
+              )
+            })}
+          </Accordion>
+
+        {/* <div className='main-banner'>
           {cat.map((e,i)=>{
             return (
               <div className={e.name}>
@@ -33,7 +53,7 @@ function SubCon1({cat}) {
             )
           })}
 
-        </div>
+        </div> */}
         {/* <div className='main-banner'>
           <div className="category01">
             <h2>category</h2>
