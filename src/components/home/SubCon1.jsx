@@ -5,7 +5,7 @@ import imgUrlC from '../../assets/items/item1-C.png'
 import imgUrlD from '../../assets/items/item1-D.png'
 import imgUrlE from '../../assets/items/item1-E.png'
 
-import '../../css/components/accordion.scss'
+
 
 
 function SubCon1({cat}) {
