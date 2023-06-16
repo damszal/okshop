@@ -1,0 +1,44 @@
+.main-nav {
+    background-color: rgb(210, 209, 209);
+}
+
+.main-nav-list{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1024px;
+    margin-top: 1rem;
+}
+
+.main-nav-item h4{
+    cursor: pointer;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.main-nav-item:hover{
+    background-color: rgb(153, 151, 151);
+}
+
+.main-nav-item:hover .main-nav-submenu {
+    min-height: min-content;
+    min-width: 200px;
+    background-color: rgba(153, 151, 151, 0.94);
+    position: absolute;
+    display: block;
+}
+
+.main-nav-submenu{
+    display: none;
+    padding: 1rem;
+    border-radius: 0 2px;
+}
+
+.main-nav-submenu ul li {
+    padding: 0.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
