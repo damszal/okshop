@@ -7,10 +7,10 @@ import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import SignIn from './pages/SignIn.jsx'
 
-// import Header from './components/Header.jsx';
 import ErrorPage from "./error-page";
 
-import './index.scss'
+// import './index.scss'
+// import './css/mediaQuery/resolution.scss'
 
 import {
   createBrowserRouter,

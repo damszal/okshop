@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Quicksand:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Carter+One&family=Paytone+One&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(239, 239, 239);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
     body{
         font-family: 'Quicksand', sans-serif;
         font-weight: 500;
