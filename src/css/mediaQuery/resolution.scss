@@ -78,9 +78,7 @@
         grid-template-columns: minmax(0px,1fr) ;
         grid-template-rows: repeat(3,1fr);
     }
-    .search-bar{
-        width: none;
-    }
+
     .c-01-adv {
         grid-column: 1/2;
         grid-row: 1/2
@@ -108,6 +106,9 @@
     .home-sub-con-01{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
+    }
+    .search-bar{
+        width: initial;
     }
     .main-img-01{
         grid-column: 1/2;
