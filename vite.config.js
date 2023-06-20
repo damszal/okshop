@@ -7,17 +7,9 @@ export default defineConfig({
   build: {
     outDir: 'server/build'
   },
-  // use when want to check all react routers functionality
-  // server: {
-  //   port: 8080,
-  // },
   server: {
     proxy: {
-      "/": {
-        target: 'https://localhost:8080',
-        changeOrigin: true,
-        secure: false,
-      },
-    },
+      "/api/items" : "http://localhost:8080/"
+    }
   },
 })

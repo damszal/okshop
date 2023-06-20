@@ -4,7 +4,7 @@ function About() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("../api/items")
+    fetch("/api/items")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
