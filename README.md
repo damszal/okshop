@@ -5,4 +5,6 @@ OK!shop for dagon project
 
 host on https://stellar-starlight-074cd2.netlify.app/
 
+UPDATE: all database connections are unavailable cause.... it's on github ;) 
+
 
