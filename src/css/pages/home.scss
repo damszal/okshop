@@ -76,84 +76,65 @@
 
 .home-sub-con-03{
     display: grid;
-    grid-template-columns: repeat(3,minmax(0px,1fr) );
+    grid-template-columns: repeat(3,minmax(0px,450px) );
     grid-template-rows: min-content;
-    place-items: center;
+    // place-items: center;
+    justify-content: space-between;
     margin-top: 4rem;
     gap: 1%;
 }
 
-.c-01-adv {
-    grid-column: 1/2;
+.home-sub-con-3-item{
     display: flex;
     flex-direction: column;
+    border: 2px solid rgb(94, 94, 94);
 }
 
-.c-01-adv h2 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
+.home-sub-con-3-item 
 
-.c-01-adv p{
-    max-width: 70%;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-.c-01-adv img{
-    align-self: center;
-    margin-bottom: 1.5rem;
-    width: 100%;
+.c-01-adv {
+    grid-column: 1/2;
 }
 
 .c-02-adv {
     grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-}
-
-.c-02-adv h2 {
-    margin-bottom: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.c-02-adv p{
-    max-width: 70%;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-.c-02-adv img{
-    align-self: center;
-    margin-bottom: 1.5rem;
-    width: 100%;
 }
 
 .c-03-adv {
     grid-column: 3/4;
-    display: flex;
-    flex-direction: column;
 }
 
-.c-03-adv h2 {
-    margin-bottom: 1rem;
+.home-sub-con-3-item  h2 {
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 3rem;
 }
 
-.c-03-adv p{
-    max-width: 70%;
-    margin: 0 auto;
+.home-sub-con-3-item  p{
+    max-width: 75%;
+    margin: 0 auto 2rem auto;
     text-align: justify;
 }
 
-.c-03-adv img{
+.home-sub-con-3-item  img{
     align-self: center;
     margin-bottom: 1.5rem;
     width: 100%;
+    padding: 0 1.5rem;
 }
+
+.home-sub-con-3-item button{
+    max-width: fit-content;
+    align-self: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 165, 0);
+    font-size: 1.5rem;
+}
+
+
 .home-sub-con-04{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -164,17 +145,14 @@
 .c-01-disc{
     grid-column: 1/2;
     background-color: rgb(208, 208, 208);
-    // height: 200px;
     overflow: hidden;
 }
 
 .c-01-disc img {
     display: block;
     width: 100%;
-    // max-height: 140%;
     margin: 0 auto;
-  
-    
+
 }
 
 
