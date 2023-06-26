@@ -1,0 +1,31 @@
+.item-cart-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 50vw;
+    z-index: 2;
+    background-color: rgb(247, 134, 134);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card-title{
+    text-align: center;
+}
+
+.item-cart-img-container{
+    max-width: 600px;
+}
+
+.item-cart-img-container img{
+    width: 100%;
+}
+
+.item-proper-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

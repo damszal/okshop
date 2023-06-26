@@ -1,32 +1,25 @@
-import { useEffect, useState } from "react";
+
 
 function About() {
-  const [items, setItems] = useState([]);
+  return(
+    <div className="item-cart-container">
+      <h2 className="item-card-title">item title</h2>
+      <div className="item-cart-img-container">
+        <img src="https://placehold.co/600x400" alt="" />
+      </div>
+      <div className="item-proper-container">
+        <div className="item-cart-size">size</div>
+        <div className="item-cart-color">color</div>
+        <div className="item-cart-qt">quantity</div>
+      </div>
+      <div className="item-cart-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptatibus repellat fugiat odio minus doloremque eos delectus assumenda perspiciatis maiores.
+      </div>
+      <div className="item-cart-price">price</div>
+      <div className="item-cart-add-icon">add-icon</div>
 
-  useEffect(() => {
-    fetch("/api/items")
-      .then((res) => res.json())
-      .then((data) => setItems(data));
-  }, []);
-
-  function renderItems() {
-    return items.map((item, i) => {
-      return (
-        <div key={i}>
-          <h3>{item.name}</h3>
-          <p>Price: {item.price}</p>
-        </div>
-        
-      );
-    });
-  }
-
-  return (
-    <main>
-      <h1>Example webshop</h1>
-      {renderItems()}
-    </main>
-  );
+    </div>
+  )
 }
 
 export default About;

@@ -9,6 +9,7 @@ import './css/components/logotype.scss'
 import './css/components/main-manu.scss'
 import './css/pages/home.scss'
 import './css/mediaQuery/resolution.scss'
+import './css/pages/about.scss'
 // import './index.scss'
 
 
