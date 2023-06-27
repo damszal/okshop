@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import SignIn from './pages/SignIn.jsx'
+import SideCard from './components/card/SideCard.jsx'
 
 import ErrorPage from "./error-page";
 
@@ -27,7 +28,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home cat = {categories}/> ,
+        element: <Home cat = {categories}/>,
+        children: [
+          {
+            path: "/cart/:item",
+            element: <SideCard />
+          },
+        ]
       },
       {
         path: '/signin',
@@ -40,8 +47,7 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About /> ,
-      },
-      
+      },    
     ],
   },
 ]);
