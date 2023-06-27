@@ -133,6 +133,10 @@
     .home-sub-con-04 div{
         grid-column: 1/2;
     }
+
+    .item-cart-container{
+        max-width: initial
+    }
 }
 
 @media screen and (max-width:475px ) {
