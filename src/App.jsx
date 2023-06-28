@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import Header from './components/Header.jsx';
 
 import './App.scss'
+import './css/components/header.scss'
 import './css/components/search-bar.scss'
 import './css/components/logotype.scss'
 import './css/components/main-manu.scss'

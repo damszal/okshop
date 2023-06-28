@@ -10,8 +10,7 @@ import SideCard from './components/card/SideCard.jsx'
 
 import ErrorPage from "./error-page";
 
-// import './index.scss'
-// import './css/mediaQuery/resolution.scss'
+
 
 import {
   createBrowserRouter,
