@@ -11,7 +11,7 @@ import './css/components/main-manu.scss'
 import './css/pages/home.scss'
 import './css/pages/about.scss'
 import './css/mediaQuery/resolution.scss'
-// import './index.scss'
+
 
 
 function App() {

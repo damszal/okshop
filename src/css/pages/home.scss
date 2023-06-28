@@ -1,14 +1,15 @@
 .home-container {
-    max-width: 90vw;
     margin: 0 auto;
+    max-width: 90vw;
 }
 
 .home-sub-con-01{
-    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3,minmax(0px,1fr) );
-    padding: 1rem;
     gap: 1%;
+
+    margin-top: 2rem;
+    padding: 1rem;
 }
 .main-img{  
     place-self: center;
@@ -31,8 +32,6 @@
     grid-column: 3/4;
 }
 
-
-
 .home-sub-con-02{
     display: grid;
     grid-template-columns: repeat(6,minmax(0px,1fr) );
@@ -43,45 +42,21 @@
 
 .home-sub-con-02 div {
     border: 2px solid black;
-    // height: 250px; 
+    max-height: 200px
 }
 
 .home-sub-con-02 div img{
-    max-width: 100%;
     height: 100%; 
-}
-.mini-banner-01{
-    max-height: 200px;
-}
-
-.mini-banner-02{
-    max-height: 200px;
-}
-
-.mini-banner-03{
-    max-height: 200px;
-}
-
-.mini-banner-04{
-    max-height: 200px;
-}
-
-.mini-banner-05{
-    max-height: 200px;
-}
-
-.mini-banner-06{
-    max-height: 200px;
+    max-width: 100%;
 }
 
 .home-sub-con-03{
     display: grid;
     grid-template-columns: repeat(3,minmax(0px,450px) );
     grid-template-rows: min-content;
-    // place-items: center;
     justify-content: space-between;
-    margin-top: 4rem;
     gap: 1%;
+    margin-top: 4rem;
 }
 
 .home-sub-con-3-item{
@@ -89,8 +64,6 @@
     flex-direction: column;
     border: 2px solid rgb(94, 94, 94);
 }
-
-.home-sub-con-3-item 
 
 .c-01-adv {
     grid-column: 1/2;
@@ -104,20 +77,20 @@
     grid-column: 3/4;
 }
 
-.home-sub-con-3-item  h2 {
+.home-sub-con-3-item h2 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 3rem;
 }
 
-.home-sub-con-3-item  p{
+.home-sub-con-3-item p{
     max-width: 75%;
     margin: 0 auto 2rem auto;
     text-align: justify;
 }
 
-.home-sub-con-3-item  img{
+.home-sub-con-3-item img{
     align-self: center;
     margin-bottom: 1.5rem;
     width: 100%;
@@ -155,34 +128,27 @@
 
 }
 
-
 .c-02-disc{
     grid-column: 2/3;
     background-color: rgb(208, 208, 208);
-    // height: 200px;
     overflow: hidden;
 }
 
 .c-02-disc img {
     display: block;
     width: 100%;
-    // max-height: 140%;
     margin: 0 auto;
-  
-    
 }
 
 .c-03-disc{
     grid-column: 3/4;
     background-color: rgb(208, 208, 208);
-    // height: 200px;
     overflow: hidden;
 }
 
 .c-03-disc img {
     display: block;
     width: 100%;
-    // max-height: 140%;
     margin: 0 auto;
   
     
@@ -191,27 +157,21 @@
 .c-04-disc{
     grid-column: 4/5;
     background-color: rgb(208, 208, 208);
-    // height: 200px;
     overflow: hidden;
 }
 
 .c-04-disc img {
     display: block;
     width: 100%;
-    // max-height: 140%;
-    margin: 0 auto;
-  
-    
+    margin: 0 auto; 
 }
+
 .home-footer{
     grid-row: 5/6;
     grid-column: 1/13;
-
-    height:fit-content;
-    
+    height:fit-content;  
     margin-top: 4rem;
     padding: 1vw;
     background-color: rgb(238, 236, 236);
-
     columns: 3;
 }
