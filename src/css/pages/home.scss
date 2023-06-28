@@ -40,14 +40,20 @@
     margin-top: 3rem;
 }
 
-.home-sub-con-02 div {
+.home-sub-con-02{ 
+    div {
     border: 2px solid black;
     max-height: 200px
+    }
 }
 
-.home-sub-con-02 div img{
+.home-sub-con-02 {
+    div {
+        img{
     height: 100%; 
     max-width: 100%;
+        }
+    }
 }
 
 .home-sub-con-03{
@@ -77,27 +83,34 @@
     grid-column: 3/4;
 }
 
-.home-sub-con-3-item h2 {
+.home-sub-con-3-item {
+    h2 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 3rem;
+    }
 }
 
-.home-sub-con-3-item p{
+.home-sub-con-3-item {
+    p{
     max-width: 75%;
     margin: 0 auto 2rem auto;
     text-align: justify;
+    }
 }
 
-.home-sub-con-3-item img{
+.home-sub-con-3-item {
+    img{
     align-self: center;
     margin-bottom: 1.5rem;
     width: 100%;
     padding: 0 1.5rem;
+    }
 }
 
-.home-sub-con-3-item button{
+.home-sub-con-3-item {
+    button{
     max-width: fit-content;
     align-self: center;
     margin-bottom: 2rem;
@@ -105,6 +118,7 @@
     border-radius: 10px;
     background-color: rgb(255, 165, 0);
     font-size: 1.5rem;
+    }
 }
 
 
@@ -121,11 +135,12 @@
     overflow: hidden;
 }
 
-.c-01-disc img {
+.c-01-disc {
+    img {
     display: block;
     width: 100%;
     margin: 0 auto;
-
+    }
 }
 
 .c-02-disc{
@@ -134,10 +149,12 @@
     overflow: hidden;
 }
 
-.c-02-disc img {
+.c-02-disc {
+    img {
     display: block;
     width: 100%;
     margin: 0 auto;
+    }
 }
 
 .c-03-disc{
@@ -146,12 +163,12 @@
     overflow: hidden;
 }
 
-.c-03-disc img {
+.c-03-disc {
+    img {
     display: block;
     width: 100%;
-    margin: 0 auto;
-  
-    
+    margin: 0 auto; 
+    }
 }
 
 .c-04-disc{
@@ -160,10 +177,12 @@
     overflow: hidden;
 }
 
-.c-04-disc img {
+.c-04-disc {
+    img {
     display: block;
     width: 100%;
     margin: 0 auto; 
+    }
 }
 
 .home-footer{

@@ -3,20 +3,22 @@
 }
 
 .main-nav-list{
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    max-width: 1024px;
+    margin: 0 auto;
     margin-top: 1rem;
+    max-width: 1024px;
 }
 
-.main-nav-item h4{
-    cursor: pointer;
-    padding: 0.8rem;
-    font-size: 1.1rem;
-    text-transform: uppercase;
+.main-nav-item {
+    h4{
+        cursor: pointer;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
 }
 
 .main-nav-item:hover{
@@ -38,12 +40,20 @@
 }
 
 
-.main-nav-submenu ul li {
-    padding: 0.5rem;
-    text-transform: capitalize;
-    cursor: pointer;
+.main-nav-submenu {
+    ul {
+        li {
+        padding: 0.5rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        }
+    }
 }
 
-.main-nav-submenu ul li:hover {
-    font-weight: 800;
+.main-nav-submenu {
+    ul {
+        li:hover {
+            font-weight: 800;
+        }
+    }
 }

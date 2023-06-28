@@ -1,3 +1,4 @@
+
 @media screen and (max-width:1280px ) {
     body{
         background-color: rgb(249, 246, 246);
@@ -13,11 +14,13 @@
         flex-wrap: wrap;
         margin-top: 0.5rem;
     }
-    header nav {
-        order: 0;
-        width: 100%;
-        display: flex;
-        justify-content: end;
+    header {
+        nav {
+            order: 0;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+        }
     }
     .search-bar{
         flex-grow: 1;
@@ -28,20 +31,29 @@
         flex-grow: 1;
     }
 
-    .home-sub-con-3-item  h2 {
-        font-size: 2rem;
-    }
-    .home-sub-con-3-item  p{
-        margin: 0 auto 1rem auto;
-        max-width: 80%;
+    .home-sub-con-3-item  {
+        h2 {
+            font-size: 2rem;
+        }
     }
 
-    .home-sub-con-3-item  img{
-        padding: 0 1rem;
+    .home-sub-con-3-item  {
+        p{
+            margin: 0 auto 1rem auto;
+            max-width: 80%;
+        }
     }
 
-    .home-sub-con-3-item button{ 
-        font-size: 1.2rem
+    .home-sub-con-3-item  {
+        img{
+            padding: 0 1rem;
+        }
+    }
+
+    .home-sub-con-3-item {
+            button{ 
+            font-size: 1.2rem
+        }
     }
 }
 
@@ -83,13 +95,19 @@
         grid-template-columns: repeat(3,minmax(0px,1fr) );
         grid-template-rows: 1fr 1fr;
     }
-    .home-sub-con-02 div img{
-        width: 100%;
+    .home-sub-con-02 {
+        div {
+            img{
+                width: 100%;
+            }
+        }
     }
 
-    .home-sub-con-3-item button{
-        font-size: 1.1rem;
-        padding: 0.6rem;
+    .home-sub-con-3-item {
+        button{
+            font-size: 1.1rem;
+            padding: 0.6rem;
+        }
     }
 }
 
@@ -112,18 +130,24 @@
         grid-row: 3/4
     }
 
-    .home-sub-con-3-item  h2 {
-        font-size: 3rem;
+    .home-sub-con-3-item  {
+        h2 {
+            font-size: 3rem;
+        }
     }
 
-    .home-sub-con-3-item  img{
-        margin-bottom: 1.5rem;
-        padding: 0 1.5rem;
+    .home-sub-con-3-item  {
+        img{
+            margin-bottom: 1.5rem;
+            padding: 0 1.5rem;
+        }
     }
 
-    .home-sub-con-3-item button{
-        font-size: 1.5rem;
-        padding: 1rem;
+    .home-sub-con-3-item {
+        button{
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
     }
 
     .home-sub-con-04{
