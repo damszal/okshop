@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Autocomplete,TextField } from '@mui/material'
+
 
 function SideCard() {
+  const sizeOptions = []
+  const colorOptions = []
+  const quantityOptions = []
   return (
     <>
       <div className="item-cart-container">
@@ -10,15 +15,38 @@ function SideCard() {
           <img src="https://placehold.co/600x400" alt="" />
         </div>
         <div className="item-proper-container">
-          <div className="item-cart-size">size</div>
-          <div className="item-cart-color">color</div>
-          <div className="item-cart-qt">quantity</div>
+          <Autocomplete
+            disablePortal
+            id="item-cart-size"
+            options={sizeOptions}
+            sx={{ width: 100 }}
+            renderInput={(params) => <TextField {...params} label="Size" />}
+          />
+          <Autocomplete
+            disablePortal
+            id="item-cart-color"
+            options={colorOptions}
+            sx={{ width: 100 }}
+            renderInput={(params) => <TextField {...params} label="Color" />}
+          />
+          <Autocomplete
+            disablePortal
+            id="item-cart-qt"
+            options={quantityOptions}
+            sx={{ width: 100 }}
+            renderInput={(params) => <TextField {...params} label="Qt" />}
+          />
         </div>
         <div className="item-cart-description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptatibus repellat fugiat odio minus doloremque eos delectus assumenda perspiciatis maiores.
         </div>
-        <div className="item-cart-price">price</div>
         <div className="item-cart-add-icon">add-icon</div>
+        <div className='item-cart-close'>
+          <Link to='/'>
+            X
+          </Link>
+        </div>
+        <div className="item-cart-price">price</div>
       </div>
       <div className="item-background">
         <Link to="/" />

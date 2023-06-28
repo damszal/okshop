@@ -58,7 +58,10 @@
 }
 
 @media screen and (max-width:768px ) {
-    
+    .item-cart-container{
+
+        min-width: 100vw;
+    }
     header {
         flex-direction: column;
         align-items: center;
