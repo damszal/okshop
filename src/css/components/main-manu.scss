@@ -1,5 +1,8 @@
+@use '../variables.scss' as var; 
+
 .main-nav {
     background-color: rgb(210, 209, 209);
+    margin-top: var.$mt-extra ;
 }
 
 .main-nav-list{
