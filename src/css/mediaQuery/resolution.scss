@@ -1,3 +1,4 @@
+@use '../variables.scss' as var; 
 
 @media screen and (max-width:1280px ) {
     body{
@@ -12,7 +13,7 @@
 
     header {
         flex-wrap: wrap;
-        margin-top: 0.5rem;
+        margin-top: var.$mt-1024;
     }
     header {
         nav {
@@ -115,6 +116,11 @@
 }
 
 @media screen and (max-width:640px ) {
+
+    .home-container{
+        margin-top: var.$mt-640;
+    }
+
     .home-sub-con-03{ 
         grid-template-columns: minmax(0px,1fr) ;
         grid-template-rows: repeat(3,1fr);
@@ -167,6 +173,10 @@
 }
 
 @media screen and (max-width:475px ) {
+
+    header{
+        margin-top: var.$mt-640;
+    }
 
     .home-sub-con-01{
         grid-template-columns: 1fr;

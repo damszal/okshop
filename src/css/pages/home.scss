@@ -1,5 +1,7 @@
+@use '../variables.scss' as var; 
+
 .home-container {
-    margin: 0 auto;
+    margin: var.$mt-1280 auto;
     max-width: 90vw;
 }
 
