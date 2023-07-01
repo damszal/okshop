@@ -5,8 +5,17 @@
     font-family: inherit;
 }
 
+    .search-bar{
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
 .search-bar-input{
     border-radius: 10px 0 0 10px;
+    flex-grow: 1;
+    max-width: 400px;
+    margin-left: auto;
 }
 
 .search-bar-input:focus{

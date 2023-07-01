@@ -4,9 +4,11 @@ import React from 'react'
 function Searchbar() {
   return (
     <form action="" className='search-bar'>
-      <input className='search-bar-input'
+      <input 
+      className='search-bar-input'
       placeholder='type a product'
-      ></input>
+      >
+      </input>
       <button className='search-bar-btn'
       type='submit'
       >search</button>
