@@ -20,7 +20,7 @@ function Header() {
     </nav>
     <Basket />
   </header>
-  <manu>
+  <div>
     <nav className='main-nav'>
       <ul className='main-nav-list'>
         <li className='main-nav-item'>
@@ -79,7 +79,7 @@ function Header() {
         </li>
       </ul>
     </nav>
-  </manu> 
+  </div> 
   </>
   )
 }

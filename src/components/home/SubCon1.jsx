@@ -14,10 +14,10 @@ function SubCon1({cat}) {
     <section className='home-sub-con-01'>
         <picture className='main-img main-img-01'>
           <Link to="/cart/item">
-            <source media="(max-width: 475px)" srcset={imgUrlD} />
-            <source media="(max-width: 640px)" srcset={imgUrlC} />
-            <source media="(max-width: 768px)" srcset={imgUrlC} />
-            <source media="(max-width: 1024px)" srcset={imgUrlB} />
+            <source media="(max-width: 475px)" srcSet={imgUrlD} />
+            <source media="(max-width: 640px)" srcSet={imgUrlC} />
+            <source media="(max-width: 768px)" srcSet={imgUrlC} />
+            <source media="(max-width: 1024px)" srcSet={imgUrlB} />
             <img 
             src={imgUrlB} 
             />
@@ -25,10 +25,10 @@ function SubCon1({cat}) {
         </picture>      
         <picture className='main-img main-img-02'>
           <Link to="/cart/item">
-            <source media="(max-width: 475px)" srcset={imgUrlD} />
-            <source media="(max-width: 640px)" srcset={imgUrlC} />
-            <source media="(max-width: 768px)" srcset={imgUrlC} />
-            <source media="(max-width: 1024px)" srcset={imgUrlB} />
+            <source media="(max-width: 475px)" srcSet={imgUrlD} />
+            <source media="(max-width: 640px)" srcSet={imgUrlC} />
+            <source media="(max-width: 768px)" srcSet={imgUrlC} />
+            <source media="(max-width: 1024px)" srcSet={imgUrlB} />
             <img 
             src={imgUrlB} 
             />
@@ -36,10 +36,10 @@ function SubCon1({cat}) {
         </picture>
         <picture className='main-img main-img-03'>
         <Link to="/cart/item">
-            <source media="(max-width: 475px)" srcset={imgUrlD} />
-            <source media="(max-width: 640px)" srcset={imgUrlC} />
-            <source media="(max-width: 768px)" srcset={imgUrlC} />
-            <source media="(max-width: 1024px)" srcset={imgUrlB} />
+            <source media="(max-width: 475px)" srcSet={imgUrlD} />
+            <source media="(max-width: 640px)" srcSet={imgUrlC} />
+            <source media="(max-width: 768px)" srcSet={imgUrlC} />
+            <source media="(max-width: 1024px)" srcSet={imgUrlB} />
             <img 
             src={imgUrlB} 
             />
