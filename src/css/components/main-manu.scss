@@ -1,8 +1,10 @@
 @use '../variables.scss' as var; 
 
 .main-nav {
-    background-color: rgb(210, 209, 209);
+    background-color: rgba(255, 142, 3, 0);
     margin-top: var.$mt-extra ;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 .main-nav-list{
@@ -11,7 +13,6 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    margin-top: 1rem;
     max-width: 1024px;
 }
 
@@ -25,15 +26,27 @@
 }
 
 .main-nav-item:hover{
-    background-color: rgb(153, 151, 151);
+    background-color: rgb(248, 170, 25);
+    position: relative;
+    border-radius: 5px 5px 0 0;
 }
 
-.main-nav-item:hover .main-nav-submenu {
-    min-height: min-content;
-    min-width: 200px;
-    background-color: rgba(153, 151, 151, 0.94);
-    position: absolute;
-    display: block;
+.main-nav-submenu {
+    transition: width 3s;
+}
+
+.main-nav-item:hover {
+    .main-nav-submenu {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        min-height: min-content;
+        background-color: rgb(248, 170, 25);
+        position: absolute;
+        display: block;
+        border-radius: 0 0 5px 5px;
+    }
 }
 
 .main-nav-submenu{
