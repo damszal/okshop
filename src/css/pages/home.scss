@@ -24,6 +24,7 @@
         display: block;
         // min-width: 300px; below img overlays and grid crashes
         width: 100%;
+        transition: scale 2s;
     }
 }
 
