@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import SearchBar from './SearchBar.jsx';
 import Basket from './Basket.jsx';
 import Logotype from './logotype.jsx';
+import MainNav from './MainNav.jsx';
 
 // import '../css/components/main-manu.scss'
 
@@ -21,64 +22,7 @@ function Header() {
     <Basket />
   </header>
   <div>
-    <nav className='main-nav'>
-      <ul className='main-nav-list'>
-        <li className='main-nav-item'>
-          <h4>category 01</h4>
-          <div className='main-nav-submenu'>
-            <ul>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-            </ul>
-          </div>
-        </li>
-        <li className='main-nav-item'>
-          <h4>category 02</h4>
-          <div className='main-nav-submenu'>
-            <ul>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>           
-            </ul>
-          </div>
-        </li>
-        <li className='main-nav-item'>
-          <h4>category 03</h4>
-          <div className='main-nav-submenu'>
-            <ul>
-              <li>subcat</li>
-              <li>subcat</li>
-            </ul>
-          </div>
-        </li>
-        <li className='main-nav-item'>
-          <h4>category 04</h4>
-          <div className='main-nav-submenu'>
-            <ul>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-            </ul>
-          </div>
-          </li>
-        <li className='main-nav-item'>
-          <h4>category 05</h4>
-          <div className='main-nav-submenu'>
-            <ul>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-              <li>subcat</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
+    <MainNav />
   </div> 
   </>
   )
