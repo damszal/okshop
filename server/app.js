@@ -1,5 +1,5 @@
 const express = require("express");
-const testRout = require('./routes/test')
+const usersRout = require('./routes/users')
 const app = express();
 
 const PORT =  8080;
@@ -7,4 +7,4 @@ const PORT =  8080;
 app.listen(PORT, () => console.log("Server started"));
 
 
-app.use('/api', testRout);
+app.use('/api', usersRout);

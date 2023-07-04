@@ -1,10 +1,10 @@
 const express = require("express");
-const conTest = require('../controllers/test')
+const conTest = require('../controllers/user')
 
 
 const router = express.Router();
 
-router.get("/items", conTest.getTest)
+router.get("/users", conTest.getUsers)
 
 
 module.exports = router
