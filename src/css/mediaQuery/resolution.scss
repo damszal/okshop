@@ -126,37 +126,11 @@
     }
 
     .home-sub-con-03{ 
-        grid-template-columns: minmax(0px,1fr) ;
-        // grid-template-columns: minmax(0px,1fr) ;
-        grid-template-rows: repeat(6,1fr);
-    }
-
-    .c-01-adv {
-        grid-column: 1/2;
-        grid-row: 1/2
-    }
-    .c-02-adv {
-        grid-column: 1/2;
-        grid-row: 2/3
-    }
-    .c-03-adv {
-        grid-column: 1/2;
-        grid-row: 3/4
-    }
-    .c-05-adv {
-        grid-column: 1/2;
-        grid-row: 4/5
-    }
-    .c-06-adv {
-        grid-column: 1/2;
-        grid-row: 5/6
-    }
-    .c-07-adv {
-        grid-column: 1/2;
-        grid-row: 6/7
+        display: block;
     }
 
     .home-sub-con-3-item  {
+        margin-top: 1.5rem;
         h2 {
             font-size: 3rem;
         }
