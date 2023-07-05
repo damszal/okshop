@@ -23,6 +23,12 @@ function SubCon3() {
         <div className="c-06-adv home-sub-con-3-item">
           <SubCon3Img />  
         </div>
+        <div className="c-07-adv home-sub-con-3-item">
+          <SubCon3Img />  
+        </div>
+        <div className="c-08-adv home-sub-con-3-item">
+          <SubCon3Img />  
+        </div>
     </section>
     <Outlet/>
     </>

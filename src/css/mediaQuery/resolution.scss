@@ -23,40 +23,38 @@
             justify-content: end;
         }
     }
-    // .search-bar{
-    //     flex-grow: 1;
-    //     display: flex;
-    //     flex-wrap: nowrap;
-    // }
-    // .search-bar-input{
-    //     flex-grow: 1;
-    // }
+
+    .home-sub-con-03{
+        grid-template-columns: repeat(3,minmax(0px,450px));
+    }
+
+    .c-04-adv{
+        display: none;
+    }
+    .c-08-adv{
+        display: none;
+    }
 
     .home-sub-con-3-item  {
         h2 {
             font-size: 2rem;
         }
-    }
-
-    .home-sub-con-3-item  {
+        
         p{
             margin: 0 auto 1rem auto;
             max-width: 80%;
         }
-    }
 
-    .home-sub-con-3-item  {
         img{
             padding: 0 1rem;
         }
     }
-
-    .home-sub-con-3-item {
             button{ 
             font-size: 1.2rem
         }
     }
-}
+
+
 
 @media screen and (max-width:768px ) {
     .item-cart-container{
@@ -112,6 +110,12 @@
             font-size: 1.1rem;
             padding: 0.6rem;
         }
+        h2 {
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 0.85rem;
+        }
     }
 }
 
@@ -123,7 +127,8 @@
 
     .home-sub-con-03{ 
         grid-template-columns: minmax(0px,1fr) ;
-        grid-template-rows: repeat(3,1fr);
+        // grid-template-columns: minmax(0px,1fr) ;
+        grid-template-rows: repeat(6,1fr);
     }
 
     .c-01-adv {
@@ -138,24 +143,34 @@
         grid-column: 1/2;
         grid-row: 3/4
     }
+    .c-05-adv {
+        grid-column: 1/2;
+        grid-row: 4/5
+    }
+    .c-06-adv {
+        grid-column: 1/2;
+        grid-row: 5/6
+    }
+    .c-07-adv {
+        grid-column: 1/2;
+        grid-row: 6/7
+    }
 
     .home-sub-con-3-item  {
         h2 {
             font-size: 3rem;
         }
-    }
-
-    .home-sub-con-3-item  {
         img{
             margin-bottom: 1.5rem;
             padding: 0 1.5rem;
         }
-    }
-
-    .home-sub-con-3-item {
         button{
             font-size: 1.5rem;
             padding: 1rem;
+        }
+        p{
+            margin-top: 1rem;
+            font-size: 1.2rem;
         }
     }
 
