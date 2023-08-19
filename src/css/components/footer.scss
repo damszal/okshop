@@ -1,0 +1,31 @@
+.home-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+
+    li {
+        padding-top: 0.75rem;
+        text-transform: capitalize;
+    }
+}
+
+.footer-list-title{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.company-info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    div ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
