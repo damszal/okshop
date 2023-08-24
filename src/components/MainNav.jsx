@@ -5,7 +5,7 @@ function MainNav() {
         <nav className='main-nav'>
       <ul className='main-nav-list'>
         <li className='main-nav-item'>
-          <h4>category 01</h4>
+          <h4>MEN</h4>
           <div className='main-nav-submenu'>
             <ul>
               <li>subcat</li>
@@ -16,7 +16,7 @@ function MainNav() {
           </div>
         </li>
         <li className='main-nav-item'>
-          <h4>category 02</h4>
+          <h4>WOMEN</h4>
           <div className='main-nav-submenu'>
             <ul>
               <li>subcat</li>
@@ -26,7 +26,7 @@ function MainNav() {
           </div>
         </li>
         <li className='main-nav-item'>
-          <h4>category 03</h4>
+          <h4>KIDS</h4>
           <div className='main-nav-submenu'>
             <ul>
               <li>subcat</li>
@@ -35,7 +35,7 @@ function MainNav() {
           </div>
         </li>
         <li className='main-nav-item'>
-          <h4>category 04</h4>
+          <h4>LIMITED EDITION</h4>
           <div className='main-nav-submenu'>
             <ul>
               <li>subcat</li>
@@ -46,7 +46,7 @@ function MainNav() {
           </div>
           </li>
         <li className='main-nav-item'>
-          <h4>category 05</h4>
+          <h4>OUTLET</h4>
           <div className='main-nav-submenu'>
             <ul>
               <li>subcat</li>

@@ -22,6 +22,8 @@
         padding: 0.8rem;
         font-size: 1.1rem;
         text-transform: uppercase;
+        min-width: 150px;
+        text-align: center;
     }
 }
 
@@ -47,6 +49,7 @@
         display: block;
         border-radius: 0 0 5px 5px;
         z-index: 1000;
+        min-width: 150px;
     }
 }
 
