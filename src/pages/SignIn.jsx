@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React,{useState} from 'react'
+import axios from 'axios'
 
 import {Grid,Typography,TextField, Button,
 } from '@mui/material'
@@ -6,6 +7,19 @@ import {Grid,Typography,TextField, Button,
 
 
 function SignIn() {
+
+  const [emailReg, setEmailReg] = useState('')
+  const [passwordReg, setPasswordReg] = useState('')
+
+  const register = () => {
+    axios.post('http://127.0.0.1:5173/reg/user', {
+      username : emailReg,
+      password : passwordReg,
+    }).then((response) => {
+      console.log(response)
+    })
+  }
+
   return (
     <Grid
     container
@@ -22,12 +36,18 @@ function SignIn() {
           label="Email"
           fullWidth
           style={{ marginBottom: "2em" }}
+          onChange={(e)=>{
+            setEmailReg(e.target.value)
+          }}
         />
         <TextField
           variant="outlined"
           label="Password"
           fullWidth
           style={{ marginBottom: "2em" }}
+          onChange={(e)=>{
+            setPasswordReg(e.target.value)
+          }}  
         />
         <TextField
           variant="outlined"
@@ -35,7 +55,7 @@ function SignIn() {
           fullWidth
           style={{ marginBottom: "2em" }}
         />
-        <Button size="large" variant="contained" color="primary">
+        <Button size="large" variant="contained" color="primary" onClick={register}>
           sign in
         </Button>
       </Grid>

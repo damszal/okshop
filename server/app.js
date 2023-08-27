@@ -7,22 +7,32 @@ const mysql = require('mysql2');
 
 const PORT =  process.env.PORT;
 
-app.listen(PORT, () => console.log("Server started on port " + process.env.PORT));
-
 const connection = mysql.createConnection({
     host: process.env.SQL_HOST,
-    port: '3306',
+    port: 'process.env.SQL_PORT',
     user: 'root',
     password: process.env.SQL_PASS,
   });
 
-  connection.query(
-    'SELECT * FROM products.shoes;',
-    function(err, results, fields) {
-      console.log(results[1]); // results contains rows returned by server
-    //   console.log(fields); // fields contains extra meta data about results, if available
-      console.log(err); 
-    }
-  );
 
-app.use('/api', usersRout);
+app.listen(PORT, () => console.log("Server started on port " + process.env.PORT));
+// make router and controller with functions below
+  app.use(express.json())
+  app.post('/reg/user',(req,res)=>{
+
+    const username = req.body.username;
+    const password = req.body.password;
+
+    connection.query(
+      'INSERT INTO ok_shop.clients (Email, Password) VALUES(?,?);',[[username],[password]],
+      function(err, results, fields) {
+        console.log(results);
+        console.log(fields); 
+        console.log(err); 
+      }
+    );
+    
+  })
+  
+  
+  app.use('/api/', usersRout);
