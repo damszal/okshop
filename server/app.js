@@ -17,10 +17,10 @@ const connection = mysql.createConnection({
   });
 
   connection.query(
-    'SELECT * FROM products.product;',
+    'SELECT * FROM products.shoes;',
     function(err, results, fields) {
-      console.log(results); // results contains rows returned by server
-      console.log(fields); // fields contains extra meta data about results, if available
+      console.log(results[1]); // results contains rows returned by server
+    //   console.log(fields); // fields contains extra meta data about results, if available
       console.log(err); 
     }
   );
