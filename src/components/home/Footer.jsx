@@ -1,5 +1,5 @@
 import React from 'react'
-import GeneralInfo from './footer/generalInfo';
+import GeneralInfo from './footer/GeneralInfo';
 import RnR from './footer/RnR';
 import Payment from './footer/Payment';
 import SocialIcons from './footer/SocialIcons';
