@@ -11,6 +11,7 @@ export default defineConfig({
     proxy: {
       "/api/" : "http://localhost:8080/",
       "/reg/" : "http://localhost:8080/",
+      "/log/" : "http://localhost:8080/",
     }
   },
 })

@@ -6,10 +6,22 @@ function About() {
     const [emailReg, setEmailReg] = useState('')
     const [passwordReg, setPasswordReg] = useState('')
 
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
     const register = () => {
       axios.post('http://127.0.0.1:5173/reg/user', {
         username : emailReg,
         password : passwordReg,
+      }).then((response) => {
+        console.log(response)
+      })
+    }
+
+    const login = () => {
+      axios.post('http://127.0.0.1:5173/log/loged', {
+        username : email,
+        password : password,
       }).then((response) => {
         console.log(response)
       })
@@ -35,10 +47,26 @@ function About() {
           />
           <button onClick={register}>Register</button>
         </div>
+
+
+
         <div className='login'>
           <h1>Login</h1>
-          <input type="text" placeholder='Email...'/>
-          <input type="password" placeholder='Password...'/>
+          <input 
+          type="text" 
+          placeholder='Email...'
+          onChange={(e)=>{
+            setEmail(e.target.value)
+          }}
+          />
+          <input 
+          type="password" 
+          placeholder='Password...'
+          onChange={(e)=>{
+            setPassword(e.target.value)
+          }}  
+          />
+          <button onClick={login}>Login</button>
         </div>
     </div>
   )
