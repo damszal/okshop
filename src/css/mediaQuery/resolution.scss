@@ -98,8 +98,20 @@
         min-width: 370px;
     }
 
-    .main-nav {
-        display: none;
+    .main-nav-list {
+        flex-shrink: 0;
+    }
+
+    .main-nav-item {
+        h4{
+            min-width: 100px;
+        }
+    }
+
+    .main-nav-item:hover {
+        .main-nav-submenu {
+            min-width: inherit;
+        }
     }
 
     .home-sub-con-01 {
@@ -147,6 +159,9 @@
 
 @media screen and (max-width:640px ) {
 
+    .main-nav{
+        display: none;
+    }
     .home-container{
         margin-top: var.$mt-640;
     }

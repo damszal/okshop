@@ -43,13 +43,12 @@
         top: 48px;
         left: 0;
         right: 0;
-        min-height: min-content;
-        background-color: rgb(248, 170, 25);
-        position: absolute;
-        display: block;
-        border-radius: 0 0 5px 5px;
         z-index: 1000;
+        display: block;
+        min-height: min-content;
         min-width: 150px;
+        background-color: rgb(248, 170, 25);
+        border-radius: 0 0 5px 5px;
     }
 }
 

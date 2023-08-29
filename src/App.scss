@@ -5,7 +5,7 @@
     src: url(./assets/items/fonts/Futura.ttf);
   }
 
-*{
+*,::after,::before{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
