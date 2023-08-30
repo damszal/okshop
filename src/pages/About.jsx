@@ -8,6 +8,8 @@ function About() {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    
+    const [loginStatus, setLoginStatus] = useState('')
 
     const register = () => {
       axios.post('http://127.0.0.1:5173/reg/user', {
@@ -24,6 +26,11 @@ function About() {
         password : password,
       }).then((response) => {
         console.log(response)
+        if(response.data){
+          setLoginStatus(response.data)
+        } else {
+          setLoginStatus(response.data[0].Email)
+        }
       })
     }
 
@@ -46,6 +53,9 @@ function About() {
           }}          
           />
           <button onClick={register}>Register</button>
+          <p>
+          {loginStatus}
+          </p>
         </div>
 
 
