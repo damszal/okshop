@@ -98,6 +98,10 @@
         min-width: 370px;
     }
 
+    .main-nav {
+        position: relative;
+    }
+
     .main-nav-list {
         flex-shrink: 0;
     }
@@ -108,9 +112,14 @@
         }
     }
 
+    .main-nav-item:hover{
+        
+    }
     .main-nav-item:hover {
+        position: inherit;
         .main-nav-submenu {
             min-width: inherit;
+            top: 49px;
         }
     }
 
