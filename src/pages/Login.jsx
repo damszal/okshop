@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import { useFormik } from 'formik';
 
 import {Grid,TextField, Button,
 } from '@mui/material'
@@ -9,8 +10,17 @@ function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loginMsg, setLoginMsg] = useState('')
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+      pass: '',
+    },
+    onSubmit: values => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   
-  const login = (e) => {
+  const login = (e,email,password) => {
     e.preventDefault();
     axios.post('http://127.0.0.1:5173/log/loged', {
       username : email,
@@ -25,10 +35,11 @@ function Login() {
     })
   }
 
+
   return (
     <Grid
     container
-    spacing={0}
+    spacing={2}
     direction="column"
     alignItems="center"
     justifyContent="center"
@@ -39,16 +50,18 @@ function Login() {
       <Grid container direction="column" alignItems="center" justify="center">
         <TextField
           variant="outlined"
-          label="Email"
+          label="email"
           fullWidth
           style={{ marginBottom: "2em" }}
-          type="text" 
+          // type="text" 
           name="email" 
           id="email" 
-          onChange={(e)=>{
-            setEmail(e.target.value)
-          }}
-
+          type="email"
+          value={formik.values.email}
+          onChange={
+            formik.handleChange
+          // }
+        }
         />
 
         <TextField
@@ -57,15 +70,23 @@ function Login() {
           fullWidth
           style={{ marginBottom: "2em" }}
           type="text" 
-          name="password" 
-          id="password" 
-          onChange={(e)=>{
-            setPassword(e.target.value)
-          }} 
+          name="pass" 
+          id="pass" 
+          value={formik.values.pass}
+          onChange={
+            formik.handleChange
+          } 
+          
 
         />
 
-        <Button size="large" variant="contained" color="primary" type='submit' onClick={login}>
+        <Button size="large" variant="contained" color="primary" type='submit' onClick={(e)=>{
+              formik.handleSubmit()
+              // ??! double checking before pass to database
+              setEmail(()=>{return formik.values.email})
+              setPassword(()=>{return formik.values.pass})
+              login(e, email, password);
+        }}>
           sign in
         </Button>
         <p>
@@ -74,8 +95,7 @@ function Login() {
       </Grid>
     </Grid>
   </Grid>
-
-
+  )}
 
 
 // formik and yup module are still instaled 
@@ -140,7 +160,7 @@ function Login() {
 //       </Grid>
 //     </Grid>
 //   </Grid>
-  )
-}
+
+
 
 export default Login
