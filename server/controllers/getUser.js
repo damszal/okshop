@@ -22,7 +22,7 @@ const connection = mysql.createConnection({
           res.send(results)
         }
         else {
-          res.send("wrong input combination")
+          res.send({message: "wrong input combination"})
         }
       }
     );
