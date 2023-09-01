@@ -5,7 +5,7 @@ const regUsersRout = require('./routes/reg')
 const getUsersRout = require('./routes/log')
 
 const app = express();
-const mysql = require('mysql2');
+
 
 const PORT =  process.env.PORT;
 
