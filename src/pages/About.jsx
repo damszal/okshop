@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import axios from 'axios'
 
 function About() {
@@ -11,6 +11,7 @@ function About() {
     
     const [loginMsg, setLoginMsg] = useState('')
 
+    axios.defaults.withCredentials = true; // setup session
 
     const register = () => {
       axios.post('http://127.0.0.1:5173/reg/user', {
@@ -34,6 +35,13 @@ function About() {
         }
       })
     }
+
+    useEffect(()=>{
+      axios.get('http://127.0.0.1:5173/log/loged')
+      .then((response)=>{
+        console.log('loged In')
+      })
+    })
 
   return (
       <div className="form-container">
