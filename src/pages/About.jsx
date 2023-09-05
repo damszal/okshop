@@ -39,9 +39,14 @@ function About() {
     useEffect(()=>{
       axios.get('http://127.0.0.1:5173/log/loged')
       .then((response)=>{
-        console.log('loged In')
-      })
-    })
+        if(response.data.loggedIn == true)
+        {console.log(response)
+        setLoginMsg(response.data.user[0].Email)}
+        else {
+          setLoginMsg('not loged in')
+        }
+      }) 
+    },[])
 
   return (
       <div className="form-container">
@@ -63,9 +68,6 @@ function About() {
           />
           <button onClick={register}>Register</button>
         </div>
-
-
-
         <div className='login'>
           <h1>Login</h1>
           <input 

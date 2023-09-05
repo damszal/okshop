@@ -1,6 +1,5 @@
 const mysql = require('mysql2');
 const bcrypt = require('bcrypt')
-const saltRounds = 10 // do skasowania
 
 const bodyParser = require('body-parser') // do skasowania ?
 const cookieParser = require('cookie-parser')// do skasowania ??
@@ -14,6 +13,15 @@ const connection = mysql.createConnection({
     password: process.env.SQL_PASS,
   });
 
+  exports.checkUser = (req,res) => { // check if user is login after reload the login page 
+    if(req.session.user) {
+      res.send({loggedIn:true, user: req.session.user})
+    } else{
+      res.send({loggedIn:false})
+
+    }
+  }
+
   exports.getUser = (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
@@ -21,9 +29,6 @@ const connection = mysql.createConnection({
     connection.query(
       'SELECT * FROM ok_shop.clients WHERE Email = ? ;',username,
       function(err, results, fields) {
-        // console.log(results[0]);
-        // console.log(fields); 
-        // console.log(err);
         if(err){
           res.send({err:err})
         }
