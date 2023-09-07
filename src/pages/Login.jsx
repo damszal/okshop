@@ -17,11 +17,11 @@ function Login() {
     },
     onSubmit: values => {
       alert(JSON.stringify(values, null, 2));
+      console.log(values)
+      login(email,password)
     },
-  });
-  
-  const login = (e,email,password) => {
-    e.preventDefault();
+  });  
+  const login = (email,password) => {
     axios.post('http://127.0.0.1:5173/log/loged', {
       username : email,
       password : password,
@@ -34,7 +34,6 @@ function Login() {
       }
     })
   }
-
 
   return (
     <Grid
@@ -76,16 +75,11 @@ function Login() {
           onChange={
             formik.handleChange
           } 
-          
-
         />
-
         <Button size="large" variant="contained" color="primary" type='submit' onClick={(e)=>{
               formik.handleSubmit()
-              // ??! double checking before pass to database
               setEmail(()=>{return formik.values.email})
               setPassword(()=>{return formik.values.pass})
-              login(e, email, password);
         }}>
           sign in
         </Button>
