@@ -1,5 +1,12 @@
 @use '../variables.scss' as var; 
 
+.manu-640-container{
+    display:none;
+    // h2{
+        font-weight: 800;
+    // }
+}
+
 .main-nav {
     background-color: rgba(255, 142, 3, 0);
     margin-top: var.$mt-extra ;
