@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
+import axios from 'axios'
 
 function MainNav() {
   const [fullPage, setFullPage] = useState(false)
@@ -7,7 +8,9 @@ function MainNav() {
     return setFullPage((fullPage)=>!fullPage )
   }
 
+  // useLoader hook ======================
   const manManuList = useLoaderData()
+  //=======================================
   
   // this is the part of getting API in standard fetch data way
   const [data,setData] = useState([])
@@ -27,11 +30,26 @@ function MainNav() {
 
 // ===============================================================
 
+// Axios fetch data method 
 
+const [kidsData, setKidsData] = useState([]);
 
+const getKidsData = ()=> {
+  axios.get("https://damszal.github.io/data.geojson").
+    then((res)=>{
+      return res.data.manuColumns[2].columnKids
+    }).then
+    ((data)=>{
+      setKidsData(data)
+    })
+}
+
+useEffect(() => {
+  getKidsData()
+}, [])
+// ==================================================================
 return (
   <>
-  {console.log(manManuList)}
       <div className={fullPage?'manu-640-full':'manu-640-container'}  
       >
         <span 
@@ -47,10 +65,10 @@ return (
             <h4>MEN</h4>
             <div className='main-nav-submenu'>
             <ul>
-                {manManuList.map(user => (
-                  <li key={user.id}>{user.title}</li>
-                  ))}
-              </ul>
+              {manManuList.map(user => (
+                <li key={user.id}>{user.title}</li>
+                ))}
+            </ul>
             </div>
           </li>
           <li className='main-nav-item'>
@@ -66,10 +84,11 @@ return (
           <li className='main-nav-item'>
             <h4>KIDS</h4>
             <div className='main-nav-submenu'>
-              <ul>
-                <li>subcat</li>
-                <li>subcat</li>
-              </ul>
+            <ul>
+              {kidsData.map(user => (
+                <li key={user.id}>{user.title}</li>
+                ))}
+            </ul>
             </div>
           </li>
           <li className='main-nav-item'>
@@ -104,6 +123,7 @@ return (
 
 export default MainNav
 
+// fetch function for useLoader ==============================
 export const manManuLoader = async () =>{
   const res = await fetch("https://damszal.github.io/data.geojson")
   const manuJson = await res.json()
@@ -111,3 +131,4 @@ export const manManuLoader = async () =>{
 
   return manManuShort
 }
+// ===========================================================
