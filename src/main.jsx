@@ -18,11 +18,13 @@ import {
 } from "react-router-dom";
 
 import categories from './data/categories.js';
+import { manManuLoader } from './components/MainNav.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App /> ,
+    loader: manManuLoader,
     errorElement: <ErrorPage />,
     children: [
       {

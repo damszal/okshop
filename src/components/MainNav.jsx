@@ -1,13 +1,13 @@
 import React, { useState,useEffect } from 'react'
+import { useLoaderData } from 'react-router-dom'
 
 function MainNav() {
   const [fullPage, setFullPage] = useState(false)
-  
   const  manuHandler = () =>{
     return setFullPage((fullPage)=>!fullPage )
   }
-  
-  
+
+  const manManuList = useLoaderData()
   
   // this is the part of getting API in standard fetch data way
   const [data,setData] = useState([])
@@ -26,8 +26,12 @@ function MainNav() {
   }, [])
 
 // ===============================================================
-  return (
-    <>
+
+
+
+return (
+  <>
+  {console.log(manManuList)}
       <div className={fullPage?'manu-640-full':'manu-640-container'}  
       >
         <span 
@@ -42,22 +46,21 @@ function MainNav() {
           <li className='main-nav-item'>
             <h4>MEN</h4>
             <div className='main-nav-submenu'>
-              <ul>
-                <li>subcat</li>
-                <li>subcat</li>
-                <li>subcat</li>
-                <li>subcat</li>
+            <ul>
+                {manManuList.map(user => (
+                  <li key={user.id}>{user.title}</li>
+                  ))}
               </ul>
             </div>
           </li>
           <li className='main-nav-item'>
             <h4>WOMEN</h4>
             <div className='main-nav-submenu'>
-            <ul>
-              {data.map(user => (
-                <li key={user.id}>{user.title}</li>
-              ))}
-            </ul>
+              <ul>
+                {data.map(user => (
+                  <li key={user.id}>{user.title}</li>
+                  ))}
+              </ul>
             </div>
           </li>
           <li className='main-nav-item'>
@@ -100,3 +103,11 @@ function MainNav() {
 }
 
 export default MainNav
+
+export const manManuLoader = async () =>{
+  const res = await fetch("https://damszal.github.io/data.geojson")
+  const manuJson = await res.json()
+  const manManuShort = await manuJson.manuColumns[1].columnMen;
+
+  return manManuShort
+}
