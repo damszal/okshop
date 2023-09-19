@@ -1,0 +1,30 @@
+@media screen and (max-width:475px ) {
+    
+    .logotype{
+        font-size: 4rem;
+    }
+
+    .search-bar{
+        width: initial;
+    }
+    .search-bar-input{
+        min-width: 300px;
+    }
+
+    .home-sub-con-01{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .main-img-01{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .main-img-02{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .main-img-03{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
