@@ -1,0 +1,11 @@
+// file used to aggregate all main scss files
+@import './css/App.scss',
+'./css/components/header.scss',
+'./css/components/search-bar.scss',
+'./css/components/logotype.scss',
+'./css/components/main-manu.scss',
+'./css/components/footer.scss',
+'./css/pages/home.scss',
+'./css/pages/about.scss',
+'./css/pages/sideCart.scss',
+'./css/mediaQuery/resolution.scss'
