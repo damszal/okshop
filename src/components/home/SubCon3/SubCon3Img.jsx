@@ -1,6 +1,6 @@
 import React from 'react'
 
-import imgUrl from '../../assets/items/item3small.png'
+import imgUrl from '../../../assets/items/item3small.png'
 import { Link } from "react-router-dom";
 
 function SubCon3Img() {

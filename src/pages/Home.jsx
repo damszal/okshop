@@ -17,7 +17,7 @@ function Home({cat}) {
     <main className='home-container'>
       <SubCon1 cat = {cat}/>
       <SubCon3 />
-      <SubCon2 />
+      {/* <SubCon2 /> */}
       <SubCon4 />
     </main>
     <Footer /> 

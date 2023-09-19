@@ -1,4 +1,4 @@
-import SubCon3Img from './SubCon3Img';
+import SubCon3Img from './SubCon3/SubCon3Img';
 import { Outlet} from "react-router-dom";
 
 function SubCon3() {
