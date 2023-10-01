@@ -19,9 +19,9 @@ const imgUrls = {
 function SubCon1() {
   return (
     <section className='home-sub-con-01'>    
-      <ImageView urlAll = {imgUrls} className={'main-img main-img-01'}/>
-      <ImageView urlAll = {imgUrls} className={'main-img main-img-02'}/>
-      <ImageView urlAll = {imgUrls} className={'main-img main-img-03'}/>
+      <ImageView urlAll = {imgUrls} className={'main-img main-img-01'} alt={'image description'}/>
+      <ImageView urlAll = {imgUrls} className={'main-img main-img-02'} alt={'image description'}/>
+      <ImageView urlAll = {imgUrls} className={'main-img main-img-03'} alt={'image description'}/>
   </section>
   )
 }
