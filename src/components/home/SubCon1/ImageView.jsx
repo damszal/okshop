@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function ImageView({urlAll}) {
+function ImageView({urlAll, className}) {
   return (
-        <Link to="/cart/item">
+      <Link to="/cart/item" className={className}>
+        <picture >
           <source media="(min-width: 1024px)" srcSet={urlAll.urlB} />
           <source media="(min-width: 768px)" srcSet={urlAll.urlC} />
           <source media="(min-width: 640px)" srcSet={urlAll.urlD} />
@@ -11,7 +12,8 @@ function ImageView({urlAll}) {
           <img 
           src={urlAll.urlA} 
           />
-        </Link>    
+        </picture>  
+      </Link> 
   )
 }
 
