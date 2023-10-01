@@ -3,7 +3,8 @@ import React from 'react'
 function RnR() {
   return (
     <div>
-    <ul> <p className='footer-list-title'>Rules and regulations</p>
+      <h3 className='footer-list-title'>Rules and regulations</h3>
+    <ul> 
       <li>Total regulations</li>
       <li>Shipping methods</li>
       <li>Return product rules</li>

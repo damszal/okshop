@@ -1,9 +1,10 @@
-import React from 'react'
+import { Fragment } from "react"
 
 function Payment() {
   return (
     <div>
-    <ul><p className='footer-list-title'>Payment methods</p>
+      <h3 className='footer-list-title'>Payment methods</h3>
+    <ul>
       <li>Blik</li>
       <li>Credit Cards</li>
       <li>Bank transfer</li>
