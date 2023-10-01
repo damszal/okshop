@@ -3,7 +3,7 @@ import React from 'react'
 
 function Searchbar() {
   return (
-    <form action="" className='search-bar'>
+    <form action="fake-dir" className='search-bar'>
       <input 
       className='search-bar-input'
       placeholder='type a product'
