@@ -4,15 +4,11 @@ import ImageView from './SubCon1/ImageView'
 import imgUrlA from '../../assets/items/item1-A.png'
 import imgUrlB from '../../assets/items/item1-B.png'
 import imgUrlC from '../../assets/items/item1-C.png'
-import imgUrlD from '../../assets/items/item1-D.png'
-import imgUrlE from '../../assets/items/item1-E.png'
 
 const imgUrls = {
   urlA : imgUrlA,
   urlB : imgUrlB,
   urlC : imgUrlC,
-  urlD : imgUrlD,
-  urlE : imgUrlE,
 }
 
 

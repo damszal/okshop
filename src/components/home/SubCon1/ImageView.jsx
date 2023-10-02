@@ -7,8 +7,8 @@ function ImageView({urlAll, className, alt}) {
         <picture >
           <source media="(min-width: 1024px)" srcSet={urlAll.urlB}/>
           <source media="(min-width: 768px)" srcSet={urlAll.urlC}/>
-          <source media="(min-width: 640px)" srcSet={urlAll.urlD}/>
-          <source media="(min-width: 475px)" srcSet={urlAll.urlE}/>
+          <source media="(min-width: 640px)" srcSet={urlAll.urlB}/>
+          <source media="(min-width: 475px)" srcSet={urlAll.urlC}/>
           <img 
           src={urlAll.urlA} 
           alt={alt}
