@@ -1,9 +1,3 @@
-import React from 'react'
-
-import { Outlet,Link } from "react-router-dom";
-import { useState,useEffect } from 'react';
-
-// import '../css/pages/home.scss'
 
 import SubCon1 from '../components/home/SubCon1'
 import SubCon2 from '../components/home/SubCon2'
