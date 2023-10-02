@@ -4,7 +4,6 @@ import Basket from './Basket.jsx';
 import Logotype from './logotype.jsx';
 import MainNav from './MainNav.jsx';
 
-// import '../css/components/main-manu.scss'
 
 function Header() {
   return (

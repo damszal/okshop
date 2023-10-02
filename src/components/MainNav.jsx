@@ -50,7 +50,7 @@ useEffect(() => {
 // ==================================================================
 return (
   <>
-      <div className={fullPage?'manu-640-full':'manu-640-container'}  
+      <nav className={fullPage?'manu-640-full':'manu-640-container'}  
       >
         <span 
         className='manu-640-btn'
@@ -58,7 +58,7 @@ return (
         >
           PICK YOUR SHOES
         </span>
-      </div>
+      </nav>
       <nav className='main-nav'>
         <ul className='main-nav-list'>
           <li className='main-nav-item'>
