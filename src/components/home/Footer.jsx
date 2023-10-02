@@ -13,10 +13,10 @@ function Footer() {
       <RnR />
       <Payment />
     </footer>  
-    <div className='company-info-container'>
+    <aside className='company-info-container'>
       <CompanyInfo/>
       <SocialIcons/>
-    </div>   
+    </aside>   
     </>
   )
 }

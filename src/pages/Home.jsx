@@ -8,12 +8,12 @@ import Footer from '../components/home/Footer'
 function Home({cat}) {
   return (
     <>
-    <main className='home-container'>
+    <section className='home-container'>
       <SubCon1 cat = {cat}/>
       <SubCon3 />
       {/* <SubCon2 /> */}
       <SubCon4 />
-    </main>
+    </section>
     <Footer /> 
     </>
   )
