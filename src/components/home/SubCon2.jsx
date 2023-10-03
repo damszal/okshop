@@ -1,5 +1,3 @@
-import React from 'react'
-
 import img from '../../assets/items/item2verysmall.png'
 
 export default function SubCon2() {

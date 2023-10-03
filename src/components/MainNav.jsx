@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import { useState,useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import axios from 'axios'
 
@@ -38,8 +38,7 @@ const getKidsData = ()=> {
   axios.get("https://damszal.github.io/data.geojson").
     then((res)=>{
       return res.data.manuColumns[2].columnKids
-    }).then
-    ((data)=>{
+    }).then((data)=>{
       setKidsData(data)
     })
 }

@@ -1,7 +1,3 @@
-import React from 'react'
-
-// import '../css/components/logotype.scss'
-
 function Logotype() {
   return (
     <div className='logotype'>

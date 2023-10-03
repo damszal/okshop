@@ -1,4 +1,3 @@
-import React from 'react'
 import ImageView from './SubCon1/ImageView'
 
 import imgUrlA from '../../assets/items/item1-A.png'

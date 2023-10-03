@@ -1,4 +1,3 @@
-import React from 'react'
 import imgUrl from'../../assets/items/item4small.png'
 
 function SubCon4() {
