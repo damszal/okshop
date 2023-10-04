@@ -1,4 +1,4 @@
-@media screen and (max-width:475px ) {
+@media screen and (max-width:500px ) {
     
     .logotype{
         font-size: 4rem;
@@ -27,4 +27,7 @@
         grid-column: 1/2;
         grid-row: 3/4;
     }
+    .home-sub-con-03{
+        display: block;
+    }  
 }
