@@ -12,7 +12,7 @@ function Home({cat}) {
       <SubCon1 cat = {cat}/>
       <SubCon3 />
       {/* <SubCon2 /> */}
-      <SubCon4 />
+      {/* <SubCon4 /> */}
     </section>
     <Footer /> 
     </>

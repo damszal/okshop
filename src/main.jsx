@@ -17,7 +17,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import categories from './data/categories.js';
+
 import { manManuLoader } from './components/MainNav.jsx'
 
 const router = createBrowserRouter([
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home cat = {categories}/>,
+        element: <Home/>,
         children: [
           {
             path: "/cart/:item",
