@@ -1,28 +1,22 @@
-import Carousel from 'react-material-ui-carousel'
-import carouselImg from '../assets/items/item1-A.png'
-import CarouselMobImg from './home/CarouselMobImg'
+import { register } from 'swiper/element/bundle';
+import CarouselMobImg from './CarouselMobImg'
 
 function CarouselMobile() {
-    var items = [
-        {
-          imgURL: carouselImg
-        },
-        {
-          imgURL: carouselImg
-        },
-        {
-          imgURL: carouselImg
-        }
-    ]
+
+  // register();
   return (
-    <Carousel 
-    next={ (next, active) => {} }
-    prev={ (prev, active) => {} }
-    >
-      {
-          items.map( (item, i) => <CarouselMobImg key={i} itemImg={item.imgURL} /> )
-      }
-    </Carousel>
+    <swiper-container  >
+      <swiper-slide>
+        <CarouselMobImg />
+      </swiper-slide>
+      <swiper-slide>
+        <CarouselMobImg />
+      </swiper-slide>
+      <swiper-slide>
+        <CarouselMobImg />
+      </swiper-slide>
+    </swiper-container>
+
   )
 }
 
