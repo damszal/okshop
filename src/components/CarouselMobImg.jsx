@@ -9,7 +9,7 @@ function CarouselMobImg() {
     <img 
     src={carouselImg} 
     alt={alt}
-    className={"test"}
+    className={"mob-slider"}
     />
     </Link> 
   )
