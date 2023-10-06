@@ -3,7 +3,7 @@ import CarouselMobImg from './CarouselMobImg'
 
 function CarouselMobile() {
 
-  // register();
+  register();
   return (
     <swiper-container  >
       <swiper-slide>
