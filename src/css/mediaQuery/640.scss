@@ -1,43 +1,5 @@
 @media screen and (max-width:640px ) {
 
-    .manu-640-container{
-        display:flex;
-        justify-content: center;
-        border-top: 1px solid #000;
-        border-bottom: 1px solid #000;
-        margin-top: var.$mt-extra ;
-    }
-
-    .manu-640-full{
-        display: flex;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgb(248, 170, 25);
-        overflow: hidden;
-        z-index: 2000;
-    }
-
-    .manu-640-btn{
-        display: inline-block;
-        height: min-content;
-        cursor: pointer;
-        padding: 0.8rem;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        width: 100vw;
-        text-align: center;
-    }
-    
-    .manu-640-btn:hover{
-        background-color: rgb(248, 170, 25);
-    }
-
-    .main-nav{
-        display: none;
-    }
     .home-container{
         margin-top: var.$mt-640;
     }
