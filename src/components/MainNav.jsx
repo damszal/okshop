@@ -1,6 +1,10 @@
 import { useState,useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import axios from 'axios'
+import AccorElem from './mainManu/AccorElem'
+import AccorElemOther from './mainManu/AccorElemOther'
+
+
 
 function MainNav() {
   const [fullPage, setFullPage] = useState(false)
@@ -57,6 +61,11 @@ return (
         >
           PICK YOUR SHOES
         </span>
+        <AccorElem subItems={manManuList} accorElemTitle={'MEN'}/>
+        <AccorElem subItems={data} accorElemTitle={'WOMEN'}/>
+        <AccorElem subItems={kidsData} accorElemTitle={'KIDS'}/>
+        <AccorElemOther accorElemTitle={'LIMITED EDITION'}/>
+        <AccorElemOther accorElemTitle={'OUTLET'}/>
       </nav>
       <nav className='main-nav'>
         <ul className='main-nav-list'>
@@ -100,7 +109,7 @@ return (
                 <li>item#4</li>
               </ul>
             </div>
-            </li>
+          </li>
           <li className='main-nav-item'>
             <h4>OUTLET</h4>
             <div className='main-nav-submenu'>
