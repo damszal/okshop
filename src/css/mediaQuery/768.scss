@@ -5,6 +5,9 @@
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
         margin-top: var.$mt-extra ;
+        div{
+            display: none;
+        }
     }
 
     .manu-640-full{
@@ -38,6 +41,7 @@
     .manu-640-btn:hover{
         background-color: rgb(248, 170, 25);
     }
+
 
     .main-nav{
         display: none;

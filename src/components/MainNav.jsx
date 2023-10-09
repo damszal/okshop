@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState,useEffect, Fragment } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import axios from 'axios'
 import AccorElem from './mainManu/AccorElem'
@@ -61,11 +61,11 @@ return (
         >
           PICK YOUR SHOES
         </span>
-        <AccorElem subItems={manManuList} accorElemTitle={'MEN'}/>
-        <AccorElem subItems={data} accorElemTitle={'WOMEN'}/>
-        <AccorElem subItems={kidsData} accorElemTitle={'KIDS'}/>
-        <AccorElemOther accorElemTitle={'LIMITED EDITION'}/>
-        <AccorElemOther accorElemTitle={'OUTLET'}/>
+          <AccorElem subItems={manManuList} accorElemTitle={'MEN'}/>
+          <AccorElem subItems={data} accorElemTitle={'WOMEN'}/>
+          <AccorElem subItems={kidsData} accorElemTitle={'KIDS'}/>
+          <AccorElemOther accorElemTitle={'LIMITED EDITION'}/>
+          <AccorElemOther accorElemTitle={'OUTLET'}/>
       </nav>
       <nav className='main-nav'>
         <ul className='main-nav-list'>
