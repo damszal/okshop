@@ -1,9 +1,11 @@
 import { register } from 'swiper/element/bundle';
 import CarouselMobImg from './CarouselMobImg'
+import { useEffect } from 'react';
 
 function CarouselMobile() {
+  useEffect(()=>register(),[]
 
-  register();
+  )
   return (
     <swiper-container  >
       <swiper-slide>
