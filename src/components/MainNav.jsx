@@ -66,6 +66,7 @@ return (
           <AccorElem subItems={kidsData} accorElemTitle={'KIDS'}/>
           <AccorElemOther accorElemTitle={'LIMITED EDITION'}/>
           <AccorElemOther accorElemTitle={'OUTLET'}/>
+        <div className='manu-758-close-btn' onClick={manuHandler} >close [X]</div>
       </nav>
       <nav className='main-nav'>
         <ul className='main-nav-list'>
