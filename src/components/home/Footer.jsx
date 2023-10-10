@@ -14,8 +14,8 @@ function Footer() {
     </footer>  
     <aside className='company-info-container'>
       <CompanyInfo/>
-      <SocialIcons/>
     </aside>   
+      <SocialIcons/>
     </>
   )
 }

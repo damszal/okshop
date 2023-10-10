@@ -30,4 +30,24 @@
     .home-sub-con-03{
         display: block;
     }  
+
+    .home-footer {
+        li {
+            font-size: 0.8rem;
+            padding-top: 0.5rem;
+        }
+    }
+
+    .footer-list-title{
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .company-info-container{
+        margin-top: 0.8rem;
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+
+
 }
