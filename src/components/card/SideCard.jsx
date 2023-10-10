@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Autocomplete,TextField } from '@mui/material'
+import CloseTwoToneIcon from '@mui/icons-material/CloseTwoTone';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 function SideCard() {
@@ -39,10 +41,12 @@ function SideCard() {
         <div className="item-cart-description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptatibus repellat fugiat odio minus doloremque eos delectus assumenda perspiciatis maiores.
         </div>
-        <div className="item-cart-add-icon">add-icon</div>
+        <div className="item-cart-add-icon">
+          <AddShoppingCartIcon />
+        </div>
         <div className='item-cart-close'>
           <Link to='/'>
-            X
+            <CloseTwoToneIcon />
           </Link>
         </div>
         <div className="item-cart-price">price</div>
