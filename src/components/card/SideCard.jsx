@@ -3,6 +3,17 @@ import { Autocomplete,TextField } from '@mui/material'
 import CloseTwoToneIcon from '@mui/icons-material/CloseTwoTone';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
+import ImageView from '../home/SubCon1/ImageView';
+
+import imgUrlA from '../../assets/items/item1-A.png'
+import imgUrlB from '../../assets/items/item1-B.png'
+import imgUrlC from '../../assets/items/item1-C.png'
+
+const imgUrls = {
+  urlA : imgUrlA,
+  urlB : imgUrlB,
+  urlC : imgUrlC,
+}
 
 function SideCard() {
   const sizeOptions = []
@@ -13,7 +24,8 @@ function SideCard() {
       <div className="item-cart-container">
         <h2 className="item-card-title">item title</h2>
         <div className="item-cart-img-container">
-          <img src="https://placehold.co/600x400" alt="" />
+          <ImageView urlAll = {imgUrls} className={''} alt={'image description'}/>
+          {/* <img src="https://placehold.co/600x400" alt="" /> */}
         </div>
         <div className="item-proper-container">
           <Autocomplete
