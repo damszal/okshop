@@ -8,13 +8,15 @@ import MainNav from './MainNav.jsx';
 function Header() {
   return (
   <>
-    <header>
-      <Link to="/" ><Logotype /></Link>
+    <header className='main-header'>
+      <Link to="/" >
+        <Logotype />
+      </Link>
       <SearchBar />
-      <nav>
-        <Link to="signin">Sign in</Link>
-        <Link to="login">Login</Link>
-        <Link to="about">About</Link>
+      <nav className='main-header-nav' >
+        <Link to="signin" className='main-header-nav__link'>Sign in</Link>
+        <Link to="login" className='main-header-nav__link'>Login</Link>
+        <Link to="about" className='main-header-nav__link' >About</Link>
       </nav>
       <Basket />
     </header>

@@ -3,10 +3,10 @@
         background-color: rgb(244, 243, 243);
     }
 
-    header {
+    .main-header {
         grid-template-rows: max-content max-content;
     }
-    header {
+    .main-header {
         a {
             grid-row: 2/3;  
         }

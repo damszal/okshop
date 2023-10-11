@@ -60,7 +60,7 @@
 
         min-width: 100vw;
     }
-    header {
+    .main-header {
         grid-template-rows: max-content max-content max-content;
         a{
             grid-column: 1 / 5;
@@ -82,7 +82,7 @@
         padding-left: 0;
     }
 
-    .search-bar-input{
+    .search-bar__input{
         min-width: 370px;
     }
 

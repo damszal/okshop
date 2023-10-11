@@ -1,6 +1,6 @@
 @use '../variables.scss' as var; 
 
-header{
+.main-header{
     display: grid;
     grid-template-columns: max-content 1fr max-content max-content;
     flex-direction: row;
