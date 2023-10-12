@@ -18,7 +18,7 @@ import {
 } from "react-router-dom";
 
 
-import { manManuLoader } from './components/MainNav.jsx'
+import { manManuLoader } from './components/mainManu/MainNav.jsx'
 
 const router = createBrowserRouter([
   {

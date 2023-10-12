@@ -1,8 +1,8 @@
 import { useState,useEffect, Fragment } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import axios from 'axios'
-import AccorElem from './mainManu/AccorElem'
-import AccorElemOther from './mainManu/AccorElemOther'
+import AccorElem from '../home/SubCon1/AccorElem'
+import AccorElemOther from '../home/SubCon1/AccorElemOther'
 
 
 
