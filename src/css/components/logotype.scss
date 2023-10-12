@@ -3,30 +3,24 @@
 .logotype{
     color: rgb(0, 0, 0);
     font-family: Futura;
-    font-size: 4.3rem;
+    font-size: 4.4rem;
     font-weight: 500;
+}
+
+.logotype:hover .logotype__item_rot{
+    scale: 1.2;
+    rotate: 10deg;
 }
 
 .logotype__item{
     display: inline-block;
+    transition: rotate 2s;
 }
-
 
 .logotype__item1_uper_color-blue {
     text-transform:uppercase;
     color: rgb(0, 162, 244);
 }
-
-.logotype__item_rot{
-    transition: rotate 2s;
-}
-
-.logotype__item_hover:hover{
-    scale: 1.2;
-    rotate: 10deg;
-    transition: rotate 2s;
-}
-
 
 .logotype__item_color-orange{
     color: rgb(255, 165, 0);

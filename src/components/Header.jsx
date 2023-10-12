@@ -9,9 +9,7 @@ function Header() {
   return (
   <>
     <header className='main-header m-h-cont'>
-      <Link to="/" >
-        <Logotype />
-      </Link>
+      <Logotype />
       <SearchBar />
       <nav className='main-header-nav' >
         <Link to="signin" className='main-header-nav__link'>Sign in</Link>
