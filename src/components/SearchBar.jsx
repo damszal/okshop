@@ -1,12 +1,12 @@
 function Searchbar() {
   return (
-    <form action="fake-dir" className='search-bar'>
+    <form action="fake-dir" className='search-bar search-bar-cont'>
       <input 
       className='search-bar__input'
       placeholder='type a product'
       >
       </input>
-      <button className='search-bar-btn'
+      <button className='search-bar__btn'
       type='submit'
       >search</button>
     </form>
