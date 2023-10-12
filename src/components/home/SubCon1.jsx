@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import useScreenWidth from '../../hooks/useScreenWidth';
 
 import ImageView from './SubCon1/ImageView'
 import CarouselMobile from '../CarouselMobile';
@@ -13,30 +13,13 @@ const imgUrls = {
   urlC : imgUrlC,
 }
 
-
 function SubCon1() {
 
-  const [screenSize, setScreenSize] = useState({
-    width: window.innerWidth,
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenSize({
-        width: window.innerWidth,
-      });
-    };
-    
-    window.addEventListener('resize', handleResize);
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [screenSize]);
+  const screenWidth = useScreenWidth()
   
   return (
     <>
-    {(screenSize.width<476)?(<CarouselMobile />):(
+    {(screenWidth.width<476)?(<CarouselMobile />):(
       <section className='home-sub-con-01'>    
         <ImageView urlAll = {imgUrls} className={'main-img main-img-01'} alt={'image description'}/>
         <ImageView urlAll = {imgUrls} className={'main-img main-img-02'} alt={'image description'}/>
