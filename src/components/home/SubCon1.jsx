@@ -28,7 +28,6 @@ function SubCon1() {
     };
     
     window.addEventListener('resize', handleResize);
-    console.log(screenSize)
     
     return () => {
       window.removeEventListener('resize', handleResize);

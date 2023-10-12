@@ -1,5 +1,5 @@
 import SearchBar from './SearchBar.jsx';
-import Basket from '../Basket.jsx';
+import Basket from './Basket.jsx';
 import Logotype from './logotype.jsx';
 import MainNav from '../MainNav.jsx';
 import MainHeaderNav from './MainHeaderNav.jsx';
