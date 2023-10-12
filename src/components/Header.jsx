@@ -8,7 +8,7 @@ import MainNav from './MainNav.jsx';
 function Header() {
   return (
   <>
-    <header className='main-header'>
+    <header className='main-header m-h-cont'>
       <Link to="/" >
         <Logotype />
       </Link>
