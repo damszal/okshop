@@ -1,39 +1,22 @@
-import { useState,useEffect, Fragment } from 'react'
+import { useState,useEffect} from 'react'
 import { useLoaderData } from 'react-router-dom'
 import axios from 'axios'
 import AccorElem from '../home/SubCon1/AccorElem'
 import AccorElemOther from '../home/SubCon1/AccorElemOther'
-
-
+import useFetchUserData from '../../hooks/useFetchUserData'
 
 function MainNav() {
+  // useLoader hook ======================
+  const manManuList = useLoaderData()
+  //=======================================
+  // this is the part of getting API in standard fetch data way
+  const data = useFetchUserData()
+  // ===============================================================
   const [fullPage, setFullPage] = useState(false)
   const  manuHandler = () =>{
     return setFullPage((fullPage)=>!fullPage )
   }
-
-  // useLoader hook ======================
-  const manManuList = useLoaderData()
-  //=======================================
   
-  // this is the part of getting API in standard fetch data way
-  const [data,setData] = useState([])
-  const fetchUserData = () => {
-     fetch("https://damszal.github.io/data.geojson")
-      .then(response => {
-        return response.json()
-      })
-      .then(data => {
-        setData(data.manuColumns[0].columnWomen)
-      })
-    }
-    
-  useEffect(() => {
-     fetchUserData()
-  }, [])
-
-// ===============================================================
-
 // Axios fetch data method 
 
 const [kidsData, setKidsData] = useState([]);
