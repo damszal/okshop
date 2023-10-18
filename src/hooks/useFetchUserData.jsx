@@ -1,9 +1,9 @@
 import { useState,useEffect } from "react"
 
-export default function useFetchUserData() {
-    const [data,setData] = useState([])
+export default function useFetchUserData(url) {
+const [data,setData] = useState([])
   const fetchUserData = () => {
-     fetch("https://damszal.github.io/data.geojson")
+     fetch(url)
       .then(response => {
         return response.json()
       })

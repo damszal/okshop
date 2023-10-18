@@ -10,13 +10,13 @@ function MainNav() {
   const manManuList = useLoaderData()
   //=======================================
   // this is the part of getting API in standard fetch data way
-  const data = useFetchUserData()
+  const data = useFetchUserData("https://damszal.github.io/data.geojson")
   // ===============================================================
   const [fullPage, setFullPage] = useState(false)
   const  manuHandler = () =>{
     return setFullPage((fullPage)=>!fullPage )
   }
-  
+
 // Axios fetch data method 
 
 const [kidsData, setKidsData] = useState([]);
