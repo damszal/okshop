@@ -11,7 +11,7 @@ function MainNav() {
     return setFullPage((fullPage)=>!fullPage )
   }
   const manManuList = useLoaderData() // useLoader hook 
-  const data = useFetchUserData("https://damszal.github.io/data.geojson")
+  const data = useFetchUserData("https://damszal.github.io/data.geojson") // standard fetch data
   const kidsData = useGetKidsData("https://damszal.github.io/data.geojson") // Axios fetch data method 
 
 return (
