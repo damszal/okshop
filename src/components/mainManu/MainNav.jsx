@@ -1,12 +1,15 @@
-import { useState,useEffect} from 'react'
+import { useState} from 'react'
 import { useLoaderData } from 'react-router-dom'
 import AccorElem from './AccorElem'
 import AccorElemOther from './AccorElemOther'
 import useFetchUserData from '../../hooks/useFetchUserData'
 import useGetKidsData from '../../hooks/useGetKidsData'
+import MainNavItem from './MainNavItem'
+import MainNavItemOther from './MainNavItemOther'
 
 
 function MainNav() {
+
   const [fullPage, setFullPage] = useState(false)
   const  manuHandler = () =>{
     return setFullPage((fullPage)=>!fullPage )
@@ -19,10 +22,7 @@ return (
   <>
       <nav className={fullPage?'manu-640-full':'manu-640-container'}  
       >
-        <span 
-        className='manu-640-btn'
-        onClick={manuHandler}
-        >
+        <span className='manu-640-btn' onClick={manuHandler}>
           PICK YOUR SHOES
         </span>
           <AccorElem subItems={manManuList} accorElemTitle={'MEN'}/>
@@ -34,60 +34,11 @@ return (
       </nav>
       <nav className='main-nav'>
         <ul className='main-nav-list'>
-          <li className='main-nav-item'>
-            <h4>MEN</h4>
-            <div className='main-nav-submenu'>
-            <ul>
-              {manManuList.map(user => (
-                <li key={user.id}>{user.title}</li>
-                ))}
-            </ul>
-            </div>
-          </li>
-          <li className='main-nav-item'>
-            <h4>WOMEN</h4>
-            <div className='main-nav-submenu'>
-              <ul>
-                {data.map(user => (
-                  <li key={user.id}>{user.title}</li>
-                  ))}
-              </ul>
-            </div>
-          </li>
-          <li className='main-nav-item'>
-            <h4>KIDS</h4>
-            <div className='main-nav-submenu'>
-            <ul>
-              {kidsData.map(user => (
-                <li key={user.id}>{user.title}</li>
-                ))}
-            </ul>
-            </div>
-          </li>
-          <li className='main-nav-item'>
-            <h4>LIMITED EDITION</h4>
-            <div className='main-nav-submenu'>
-              <ul>
-                <li>item#1</li>
-                <li>item#2</li>
-                <li>item#3</li>
-                <li>item#4</li>
-              </ul>
-            </div>
-          </li>
-          <li className='main-nav-item'>
-            <h4>OUTLET</h4>
-            <div className='main-nav-submenu'>
-              <ul>
-              <li>item#1</li>
-                <li>item#2</li>
-                <li>item#3</li>
-                <li>item#4</li>
-                <li>item#5</li>
-                <li>item#6</li>
-              </ul>
-            </div>
-          </li>
+          <MainNavItem title ={'MAN'} manuList={manManuList}/>
+          <MainNavItem title ={'WOMEN'} manuList={data}/>
+          <MainNavItem title ={'KIDS'} manuList={kidsData}/>
+          <MainNavItemOther title={'LIMITED EDITION'} />
+          <MainNavItemOther title={'OUTLET'} />
         </ul>
     </nav>
    </>   
