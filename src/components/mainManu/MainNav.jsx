@@ -6,6 +6,7 @@ import useFetchUserData from '../../hooks/useFetchUserData'
 import useGetKidsData from '../../hooks/useGetKidsData'
 import MainNavItem from './MainNavItem'
 import MainNavItemOther from './MainNavItemOther'
+import { useEffect } from 'react'
 
 
 function MainNav() {
@@ -17,6 +18,10 @@ function MainNav() {
   const manManuList = useLoaderData() // useLoader hook 
   const data = useFetchUserData("https://damszal.github.io/data.geojson") // standard fetch data
   const kidsData = useGetKidsData("https://damszal.github.io/data.geojson") // Axios fetch data method 
+
+  useEffect(()=>{
+      document.body.classList.toggle('hidde-scroll')
+  },[fullPage])
 
 return (
   <>
