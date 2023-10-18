@@ -6,19 +6,14 @@ import useFetchUserData from '../../hooks/useFetchUserData'
 import useGetKidsData from '../../hooks/useGetKidsData'
 
 function MainNav() {
-// useLoader hook ======================
-  const manManuList = useLoaderData()
-//=======================================
-// this is the part of getting API in standard fetch data way
-  const data = useFetchUserData("https://damszal.github.io/data.geojson")
-// ===============================================================
   const [fullPage, setFullPage] = useState(false)
   const  manuHandler = () =>{
     return setFullPage((fullPage)=>!fullPage )
   }
-// Axios fetch data method 
-  const kidsData = useGetKidsData("https://damszal.github.io/data.geojson")
-// ==================================================================
+  const manManuList = useLoaderData() // useLoader hook 
+  const data = useFetchUserData("https://damszal.github.io/data.geojson")
+  const kidsData = useGetKidsData("https://damszal.github.io/data.geojson") // Axios fetch data method 
+
 return (
   <>
       <nav className={fullPage?'manu-640-full':'manu-640-container'}  
