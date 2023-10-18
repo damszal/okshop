@@ -13,15 +13,19 @@
     .manu-640-full{
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        height: max-content;
         background-color: rgb(248, 170, 25);
-        // overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: calc(100% - 5px);
         z-index: 2000;
+        outline-style: solid;
+        outline-color: rgb(248, 170, 25);
+        outline-width: 10px;
         .manu-640-btn{
             font-size: 2rem;
             font-weight: 700;
