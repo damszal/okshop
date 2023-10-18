@@ -5,6 +5,7 @@ import AccorElemOther from '../home/SubCon1/AccorElemOther'
 import useFetchUserData from '../../hooks/useFetchUserData'
 import useGetKidsData from '../../hooks/useGetKidsData'
 
+
 function MainNav() {
   const [fullPage, setFullPage] = useState(false)
   const  manuHandler = () =>{
@@ -94,13 +95,3 @@ return (
 }
 
 export default MainNav
-
-// fetch function for useLoader ==============================
-export const manManuLoader = async () =>{
-  const res = await fetch("https://damszal.github.io/data.geojson")
-  const manuJson = await res.json()
-  const manManuShort = await manuJson.manuColumns[1].columnMen;
-
-  return manManuShort
-}
-// ===========================================================
