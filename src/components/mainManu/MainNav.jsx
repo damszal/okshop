@@ -1,6 +1,6 @@
 import { useState,useEffect} from 'react'
 import { useLoaderData } from 'react-router-dom'
-import AccorElem from '../home/SubCon1/AccorElem'
+import AccorElem from './AccorElem'
 import AccorElemOther from '../home/SubCon1/AccorElemOther'
 import useFetchUserData from '../../hooks/useFetchUserData'
 import useGetKidsData from '../../hooks/useGetKidsData'
