@@ -4,8 +4,10 @@ import Logotype from './logotype.jsx';
 import MainNav from '../mainManu/MainNav.jsx';
 import MainHeaderNav from './MainHeaderNav.jsx';
 
+console.log(VAR)
 
 function Header() {
+
   return (
   <>
     <header className='main-header m-h-cont'>
