@@ -5,7 +5,9 @@ import MainNav from '../mainManu/MainNav.jsx';
 import MainHeaderNav from './MainHeaderNav.jsx';
 
 function Header() {
-  console.log(process.env.EXAMPLE_VAR)
+  if (process.env.EXAMPLE_VAR == 12345){
+    console.log('everything works well!!')
+  }
   return (
   <>
     <header className='main-header m-h-cont'>
