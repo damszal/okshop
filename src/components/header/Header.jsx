@@ -5,7 +5,7 @@ import MainNav from '../mainManu/MainNav.jsx';
 import MainHeaderNav from './MainHeaderNav.jsx';
 
 function Header() {
-  if (env.EXAMPLE_VAR=='12345'){
+  if (EXAMPLE_VAR=='12345'){
     console.log('everything works well!!')
   } else {
     console.log('error')
