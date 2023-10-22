@@ -5,7 +5,7 @@ import MainNav from '../mainManu/MainNav.jsx';
 import MainHeaderNav from './MainHeaderNav.jsx';
 
 function Header() {
-
+  console.log(EXAMPLE_VAR)
   return (
   <>
     <header className='main-header m-h-cont'>
