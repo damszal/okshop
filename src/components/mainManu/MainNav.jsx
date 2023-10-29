@@ -20,7 +20,9 @@ function MainNav() {
   const kidsData = useGetKidsData("https://damszal.github.io/data.geojson") // Axios fetch data method 
 
   useEffect(()=>{
+    if(fullPage == true){
       document.body.classList.toggle('hidde-scroll')
+    }
   },[fullPage])
 
 return (
