@@ -22,6 +22,8 @@ function MainNav() {
   useEffect(()=>{
     if(fullPage == true){
       document.body.classList.toggle('hidde-scroll')
+    }else{
+      document.body.classList.toggle('hidde-scroll')
     }
   },[fullPage])
 
