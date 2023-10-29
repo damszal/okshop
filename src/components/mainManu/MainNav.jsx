@@ -12,7 +12,9 @@ import { useEffect } from 'react'
 function MainNav() {
 
   const [fullPage, setFullPage] = useState(false)
-  const  manuHandler = () =>{
+  const  manuHandler = (e) =>{
+    e.bubbles = false
+    console.log(e.bubbles)
     return setFullPage((fullPage)=>!fullPage )
   }
   const manManuList = useLoaderData() // useLoader hook 
